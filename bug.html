@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    //Incorrect way to access element, resulting in unexpected behavior.
+    var element = document.getElementById('#myDiv');
+    console.log(element); //Returns null
+  </script>
+</body>
+</html>
